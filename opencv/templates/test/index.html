@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Django web Server</title>
+</head>
+<body>
+	<div>
+		<h3>Hello Welcome to Django Web App </h3>
+	</div>
+	<form action="{% url 'click' %}" method="POST">
+		{% csrf_token %}
+		<button type="submit" name="tp">Invoke</button>
+	</form>
+	<div>
+		{{ value1 }}
+	</div>
+</body>
+</html>
